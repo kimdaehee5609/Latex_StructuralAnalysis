@@ -1,0 +1,35 @@
+\documentclass[a4paper,10pt]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage{structuralanalysis}
+\usepackage{3dstructuralanalysis}
+
+%\setlength{\paperheight}{30cm}
+%\setlength{\textheight}{24.5cm}
+%\setlength{\paperwidth}{21cm}
+%\setlength{\textwidth}{16.8cm}
+%\setlength{\oddsidemargin}{-0.3cm}
+%\setlength{\evensidemargin}{-0.3cm}
+%\setlength{\parindent}{0cm}
+%\setlength{\topmargin}{-1.9cm}
+%\setlength{\headsep}{1.3cm}
+%\setlength{\footskip}{1.5cm}
+
+\begin{document}
+
+\vspace*{2cm}
+
+\begin{tikzpicture}
+
+	\point{a}{0}{0};
+	\point{b}{2}{1};
+	\point{c}{4}{0.5};
+	\beam{2}{a}{b}[0][1];
+	\beam{2}{b}{c}[1];
+
+	\support{1}{a}[0];
+	\support{2}{c}[0];
+
+\end{tikzpicture}
+
+\end{document}
